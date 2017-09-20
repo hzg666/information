@@ -23,23 +23,27 @@ nameserver 10.72.8.2
 ```
 
 ## 2、 docker的安装与卸载
+### 安装docker
 
 ```
-> 安装docker
-#wget -qO- https://get.docker.com/ | sh
+ #wget -qO- https://get.docker.com/ | sh
 
-> 卸载docker
-卸载Docker包：
+```
 
-$ sudo apt-get purge docker-engine
+### 卸载docker
+
+```
+ 卸载Docker包：
+
+ $ sudo apt-get purge docker-engine
 
 卸载Docker包及其以来不再需要使用下面的命令：
 
-$ sudo apt-get autoremove --purge docker-engine
+ $ sudo apt-get autoremove --purge docker-engine
 
 上面的命令不会移除镜像，容器，卷或者是用户创建的配置文件。如果你想删除所有的镜像，容器和卷，运行下面的命令：
 
-$ rm -rf /var/lib/docker
+ $ rm -rf /var/lib/docker
 
 你必须手动删除用户创建的配置文件。
 
