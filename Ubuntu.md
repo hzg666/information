@@ -25,11 +25,10 @@ nameserver 10.72.8.2
 ## 2、 docker的安装与卸载
 
 ```
-安装docker
+> 安装docker
 #wget -qO- https://get.docker.com/ | sh
 
-卸载docker
-
+> 卸载docker
 卸载Docker包：
 
 $ sudo apt-get purge docker-engine
