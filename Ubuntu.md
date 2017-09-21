@@ -72,10 +72,10 @@ nameserver 10.72.8.2
 ### 下载maven
 ```
 
-wget http://apache.fayea.com/apache-mirror/maven/maven-3/3.2.3/binaries/apache-maven-3.2.3-bin.tar.gz
+wget wget http://apache.communilink.net/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 解压
 
-tar -xzf apache-maven-3.2.3-bin.tar.gz
+tar -xzf apache-maven-3.3.9-bin.tar.gz
 设置环境变量
 
 环境变量分为用户变量和系统变量。
