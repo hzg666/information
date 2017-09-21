@@ -110,3 +110,17 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "3.13.0-32-generic", arch: "amd64", family: "unix"
 
 ```
+
+# 4、 ubuntu下安装gedit插件
+
+```
+因为gedit-plugins : 依赖: gir1.2-zeitgeist-2.0
+
+所以首先
+sudo apt-get install gir1.2-zeitgeist-2.0
+ 如果报错可以先
+sudo apt-get update
+ 然后
+sudo apt-get install gedit-plugins
+ 在gedit的插件里面选中嵌入终端、单词补全等插件就行
+ ```
