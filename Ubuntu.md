@@ -270,3 +270,16 @@ ubuntu  两种下安装jdk7 jdk8 的方式介绍完毕
  
 ```
 
+## 6、 安装phpmyadmin
+
+```
+1）安装mysql
+2）安装phpmyadmin
+sudo apt-get install phpmyadmin
+3）切换到/var/www/html
+cd /var/www/html
+sudo ln -s /usr/share/phpmyadmin phpmyadmin
+4）打开浏览器
+http://192.168.237.171（服务器ip）/phpmyadmin/
+```
+
