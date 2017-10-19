@@ -321,6 +321,7 @@ Common Name (e.g. server FQDN or YOUR name) []:registry.ecloud.com.cn
 Email Address []:
 
 ```
+修改/root/harbor/harbor.cfg文件，hostname、ui_url_protocol = https、ssl_cert及ssl_cert_key。
 
 
 
