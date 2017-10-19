@@ -282,6 +282,49 @@ Creating nginx
 Creating harbor-jobservice ... done
 ```
 
+### 6、创建数据及证书目录
+```
+# mkdir -p /opt/docker/registry/data
+# mkdir -p /opt/docker/registry/certs
+```
+构建证书(cd /opt/docker/registry)
+```
+# cd /opt/docker/registry
+# openssl genrsa -out certs/registry_ecloud_com_cn.key 2048
+
+```
+
+```
+#openssl req -newkey rsa:4096 -nodes -sha256 -keyout certs/registry_ecloud_com_cn.key -x509 -days 365 -out certs/registry_ecloud_com_cn.crt
+```
+
+```
+生成证书备注：
+Generating a 4096 bit RSA private key
+........................................++
+..........................................++
+writing new private key to 'certs/registry_ecloud_com_cn.key'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CN
+State or Province Name (full name) [Some-State]:BeiJing
+Locality Name (eg, city) []:BeiJing
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:ChinaOPS
+Organizational Unit Name (eg, section) []:ChinaOPS 
+Common Name (e.g. server FQDN or YOUR name) []:registry.ecloud.com.cn
+Email Address []:
+
+```
+
+
+
+
 ### 参照：
 
 1. http://blog.csdn.net/aixiaoyang168/article/details/73549898
