@@ -1,4 +1,4 @@
-#  1. ubuntu安装rabbitmq
+# 1. ubuntu安装rabbitmq
 
 ```
 echo 'deb http://www.rabbitmq.com/debian/ testing main' |   sudo tee /etc/apt/sources.list.d/rabbitmq.list
