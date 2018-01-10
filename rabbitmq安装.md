@@ -25,8 +25,12 @@ rabbitmqctl status
 ## 4. 添加用户并加入管理员
 
 ```
+//添加用户和设定密码rabbitmqctl add_user User Password
 rabbitmqctl add_user admin china-ops
+//设为用户的角色为管理员rabbitmqctl set_user_tags User administrator
 rabbitmqctl set_user_tags admin administrator
+//设为用户的权限rabbitmqctl  set_permissions  -p  VHostPath  User  ConfP  WriteP  ReadP
+rabbitmqctl  set_permissions -p /  admin '.*' '.*' '.*'  
 ```
 
 ## 5.url访问
