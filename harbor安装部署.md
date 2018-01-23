@@ -336,4 +336,25 @@ Email Address []:
 
 
 
+### 7、问题
 
+```
+1）重启后回报错误：ERROR: for registry  UnixHTTPConnectionPool(host='localhost', port=None): Read timed out. (read timeout=60) 
+解决方法：vim /etc/hosts
+127.0.0.1 localhost reg.pro.com
+把域名写在hosts文件的第一行localhost后面。
+
+2）
+接着在harbor目录下执行./install.sh命令即可，会自动导入镜像并启动对应的容器，待脚本跑完之后使用docke-compose ps即可查看，常用命令包含以下几个：
+
+docker-compose up -d               ###后台启动，如果容器不存在根据镜像自动创建
+
+docker-compose down   -v         ###停止容器并删除容器
+
+docker-compose start                 ###启动容器，容器不存在就无法启动，不会自动创建镜像
+
+docker-compose stop                 ###停止容器
+
+注：其实上面是停止docker-compose.yml中定义的所有容器，默认情况下docker-compose就是操作同目录下的docker-compose.yml文件，如果使用其他yml文件，可以使用-f自己指定。
+
+```
