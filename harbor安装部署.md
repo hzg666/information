@@ -358,3 +358,18 @@ docker-compose stop                 ###停止容器
 注：其实上面是停止docker-compose.yml中定义的所有容器，默认情况下docker-compose就是操作同目录下的docker-compose.yml文件，如果使用其他yml文件，可以使用-f自己指定。
 
 ```
+
+### 8 docker登录失败，修改方法：
+
+```
+#因为docker默认使用的是https连接，而harbor默认使用http连接，所以需要修改docker配置标志insecure registry不安全仓库的主机！
+#当然，harbor也可以设置为https，这个后续文章中再列出操作方法吧！
+
+#vim /usr/lib/systemd/system/docker.service
+ExecStart=/usr/bin/dockerd --insecure-registry=192.168.6.113
+#只加上--insecure-registry这个参数即可。
+
+#重启docker：
+#systemctl daemon-reload
+#systemctl restart docker.service
+```
