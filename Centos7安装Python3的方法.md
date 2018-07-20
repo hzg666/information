@@ -60,4 +60,5 @@ ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 ```
 
 在命令行中输入python3测试
+
 ![image](https://github.com/hzg666/information/blob/master/images/%E9%AA%8C%E8%AF%81python%E5%AE%89%E8%A3%85%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F.png)
