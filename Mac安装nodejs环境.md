@@ -1,9 +1,10 @@
 # Mac安装nodejs环境
 ## 安装流程
-### 1、github搜索nvm，进入项目
+### 1、github搜索nvm，进入项目(https://github.com/creationix/nvm)
 
 ### 2、安装nvm
 
+```
 ➜  soft curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -31,8 +32,11 @@ Total 6082 (delta 4005), reused 1884 (delta 0)
 export NVM_DIR="/Users/cony/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+```
+
 ### 3、根据提示执行命令load nvm
 
+```
 ➜  soft export NVM_DIR="/Users/cony/.nvm"
 ➜  soft [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 ➜  soft nvm
@@ -97,8 +101,11 @@ Example:
 Note:
   to remove, delete, or uninstall nvm - just remove the `$NVM_DIR` folder (usually `~/.nvm`)
   
+  ```
+  
 ### 4、使用nvm安装node(根据自己需求安装相应版本)
 
+```
 ➜  soft nvm install node
 Downloading and installing node v7.5.0...
 Local cache found: $NVM_DIR/.cache/bin/node-v7.5.0-darwin-x64/node-v7.5.0-darwin-x64.tar.gz
@@ -112,13 +119,16 @@ Computing checksum with shasum -a 256
 Checksums matched!
 Now using node v7.5.0 (npm v4.1.2)
 Creating default alias: default -> node (-> v7.5.0)
+```
 
 ### 5、验证node及npm版本
 
+```
 ➜  soft node -v
 v7.5.0
 ➜  soft npm -v
 4.1.2
+```
 
-
+## 参照URL
 https://www.jianshu.com/p/a41f4923e2eb
