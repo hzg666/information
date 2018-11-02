@@ -1,0 +1,3 @@
+
+docker容器映射端口8088，磁盘/root/software/airport/webapps
+docker run -d -p 8088:8080 -v /root/software/airport/webapps:/usr/local/tomcat/webapps airport:v1 
