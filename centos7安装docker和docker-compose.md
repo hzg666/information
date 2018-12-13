@@ -225,3 +225,6 @@ pkg_resources.DistributionNotFound: backports.ssl-match-hostname>=3.5
 　　如若python版本过低，需升级，见：http://www.cnblogs.com/YatHo/p/8257387.html
   
   ```
+
+参考：
+http://www.cnblogs.com/itech/p/5220122.html
